@@ -1,0 +1,9 @@
+{
+    "name": "developer/core-php",
+    "description": "Build core website by pure php",
+    "type": "project",
+    "require": {
+        "wp-phpunit/wp-phpunit": "^5.5"
+    },
+    "license": "NamNV"
+}

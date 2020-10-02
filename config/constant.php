@@ -3,4 +3,4 @@
 /**
  * Hằng mặc định
  */
-define('BASE_URL', 'http://localhost:8080/bege/public/');
+define('BASE_URL', 'http://localhost/core-php/public/');

@@ -62,7 +62,9 @@
                 <div class="col-xl-2 col-md-12">
                     <!-- site-logo -->
                     <div class="site-logo">
-                        <a href="index.html"><img src="<?= BASE_URL ?>main/images/logo/logo-white.png" alt="Nikado"></a>
+                        <a href="<?php BASE_URL ?>">
+                            <img src="<?= BASE_URL.'main/images/logo/logo-white.png' ?>" alt="Nikado">
+                        </a>
                     </div>
                 </div>
                 <div class="col-xl-6 col-md-12">

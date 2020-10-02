@@ -24,10 +24,10 @@ function render($controller, $method, $param = null) {
     
     if (isset($pages[$controller][$method])) {
         require_once '../src/'.$pages[$controller][$method]['handle']; // Chèn file xử lý dữ liệu
-        require_once '../resource/pages/'.$pages[$controller][$method]['view']; // Chèn file view
+        require_once '../resources/views/pages/'.$pages[$controller][$method]['view']; // Chèn file view
         $title_page = $pages[$controller][$method]['title'];
     } else {
-        require_once '../resource/errors/404.php';
+        require_once '../resources/views/errors/404.php';
         $title = '404 trang không tìm thấy';
     }
 }

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Chạy tất cả file thông qua index
  */
@@ -9,8 +8,7 @@ require_once '../config/auto_load.php'; // File auto_load chạy những file c�
 
 <!doctype html>
 <html class="no-js" lang="en">
-    
-<!-- Mirrored from preview.hasthemes.com/bege-v4/bege/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 May 2020 16:12:42 GMT -->
+
 <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -22,7 +20,8 @@ require_once '../config/auto_load.php'; // File auto_load chạy những file c�
         <link rel="shortcut icon" type="image/x-icon" href="images/icons/icon_logo.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="<?= BASE_URL ?>main/css/bootstrap.min.css">
+        <link rel="stylesheet" href="<?= BASE_URL ?>css/app.css">
+
         <link rel="stylesheet" href="<?= BASE_URL ?>main/css/font-awesome.min.css">
         <link rel="stylesheet" href="<?= BASE_URL ?>main/css/ionicons.min.css">
         <link rel="stylesheet" href="<?= BASE_URL ?>main/css/css-plugins-call.css">
@@ -33,23 +32,18 @@ require_once '../config/auto_load.php'; // File auto_load chạy những file c�
     </head>
     <body>
         <div class="wrapper home-one home-three">
-            <?php require '../resource/layouts/header.layout.php' ?>
+            <?php require '../resources/views/layouts/header.layout.php' ?>
 
             <?php render($controller, $method) ?>
 
-            <?php require '../resource/layouts/brandlogo.layout.php' ?>
-            <?php require '../resource/layouts/footer.layout.php' ?>
-            <?php require '../resource/layouts/quickview.layout.php' ?>
+            <?php require '../resources/views/layouts/brandlogo.layout.php' ?>
+            <?php require '../resources/views/layouts/footer.layout.php' ?>
+            <?php require '../resources/views/layouts/quickview.layout.php' ?>
         </div>
         <!-- Body main wrapper end -->
 
+        <script src="<?= BASE_URL ?>js/app.js"></script>
 
-        <!-- jQuery -->
-        <script src="<?= BASE_URL ?>libs/jquery/jquery-3.5.1.min.js"></script>
-        <!-- Popper min js -->
-        <script src="<?= BASE_URL ?>main/js/popper.min.js"></script>
-        <!-- Bootstrap min js  -->
-        <script src="<?= BASE_URL ?>main/js/bootstrap.min.js"></script>
 		<!-- nivo slider pack js  -->
         <script src="<?= BASE_URL ?>main/js/jquery.nivo.slider.pack.js"></script>
         <!-- All plugins here -->
